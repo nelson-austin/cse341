@@ -59,7 +59,7 @@ const deleteContact = async (req, res) => {
     const response = await mongodb.getDb().db('project').collection('contacts').deleteOne({ _id: userId }, true);
     console.log(response);
     if (response.deletedCount > 0) {
-        res.status(204).send();
+        res.status(200).send();
     } else {
         res.status(500).json(response.error || 'Unable to delete contact. Please try again later.')
     }
