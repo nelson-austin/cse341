@@ -1,17 +1,58 @@
 // LOCALHOST
 GET http://localhost:8080/contacts 
 ###
+POST http://localhost:8080/contacts HTTP/1.1 
+content-type: application/json
+
+{
+    "firstName":"Ryan",
+    "lastName":"Reynolds",
+    "email":"reynoldsr@contact.com",
+    "favoriteColor":"red",
+    "birthday":"04/14/2014"
+}
+###
 GET http://localhost:8080/contacts/65b5cbd6c3c1594787c71133
 ### 
-GET http://localhost:8080/contacts/65b5cbd6c3c1594787c71134
-### 
-GET http://localhost:8080/contacts/65b5cbd6c3c1594787c71135
+PUT http://localhost:8080/contacts/65bc7e0dfe88d09bb8288090 HTTP/1.1 
+content-type: application/json
+
+{
+    "firstName":"Ryan",
+    "lastName":"Reynolds",
+    "email":"reynoldsr@contact.com",
+    "favoriteColor":"black",
+    "birthday":"04/14/2014"
+}
+###
+DELETE http://localhost:8080/contacts/65bc7e0dfe88d09bb8288090 HTTP/1.1
+###
 // RENDER
+GET http://localhost:8080/contacts 
 ###
-GET https://nelson-austin.onrender.com/contacts
+POST http://localhost:8080/contacts HTTP/1.1 
+content-type: application/json
+
+{
+    "firstName":"Ryan",
+    "lastName":"Reynolds",
+    "email":"reynoldsr@contact.com",
+    "favoriteColor":"red",
+    "birthday":"04/14/2014"
+}
 ###
-GET https://nelson-austin.onrender.com/contacts/65b5cbd6c3c1594787c71133
+GET http://localhost:8080/contacts/65b5cbd6c3c1594787c71133
+### 
+PUT http://localhost:8080/contacts/65bc7e0dfe88d09bb8288090 HTTP/1.1 
+content-type: application/json
+
+{
+    "firstName":"Ryan",
+    "lastName":"Reynolds",
+    "email":"reynoldsr@contact.com",
+    "favoriteColor":"black",
+    "birthday":"04/14/2014"
+}
 ###
-GET https://nelson-austin.onrender.com/contacts/65b5cbd6c3c1594787c71134
+DELETE http://localhost:8080/contacts/65bc7e0dfe88d09bb8288090 HTTP/1.1
 ###
-GET https://nelson-austin.onrender.com/contacts/65b5cbd6c3c1594787c71135
