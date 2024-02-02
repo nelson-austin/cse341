@@ -21,12 +21,14 @@ content-type: application/json
     "firstName":"Thomas",
     "lastName":"Brodie-Sangster",
     "email":"brodiet@contact.com",
-    "favoriteColor":"green",
-    "birthday":"01/21/2011"
+    "favoriteColor":"blue",
+    "birthday":"01/11/2011"
 }
 ###
-DELETE http://localhost:8080/contacts/65bc8afb5a0d114a5a9ee969 HTTP/1.1
+DELETE http://localhost:8080/contacts/65bc9079182db1ede2fe1905 HTTP/1.1
 ###
+
+
 // RENDER
 GET http://nelson-austin.onrender.com/contacts 
 ###
@@ -50,9 +52,9 @@ content-type: application/json
     "firstName":"Thomas",
     "lastName":"Brodie-Sangster",
     "email":"brodiet@contact.com",
-    "favoriteColor":"green",
+    "favoriteColor":"blue",
     "birthday":"01/11/2011"
 }
 ###
-DELETE http://nelson-austin.onrender.com/contacts/65bc8b9c5a0d114a5a9ee96a HTTP/1.1
+DELETE http://nelson-austin.onrender.com/contacts/65bc9079182db1ede2fe1905 HTTP/1.1
 ###
